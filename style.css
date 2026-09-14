@@ -1,22 +1,140 @@
 html {
-    border: 10px solid rgb(75, 75, 75); box-sizing: border-box; min-height: 100vh;}
+    border: 10px solid rgb(75, 75, 75); box-sizing: border-box; min-height: 100vh;
+}
 
 body {
     max-width: 1100px;
     margin: 0 auto;
 }
 
+body.home-page {
+    background-color: rgb(33, 96, 126);
+}
+
+body.detail-page {
+    background-color: rgb(161, 56, 8);
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px black;
+}
+
+h6 {
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 1px black;
+}
+
+marquee {
+    color: aliceblue;
+}
+
+h2 {
+    margin-left: 25px;
+    color: aliceblue;
+    text-shadow: 1px 1px black;
+}
+
+h2 a {
+    color: aliceblue;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+h2 a:hover {
+    color: #ffd700 !important;
+    transform: translateX(5px);
+    text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.6);
+}
+
 .food-image-row {
-    display: flex; align-items: center; gap: 15px; justify-content: center; max-width: 1100px; margin: 0 auto;}
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
 
 .food-image {
-    height: 300px; width: 300px; border-radius: 5px; border: 1px solid black; margin-left: 25px; margin: 0px 25px 25px 25px;}
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-left: 25px;
+    margin: 0px 25px 25px 25px;
+}
 
 .food-content {
-    display: flex; align-items: center; gap: 40px;}
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
 
 .vertical-line {
-    width: 2px; height: 350px; background-color: gold;}
+    width: 2px;
+    height: 350px;
+    background-color: gold;
+}
 
 .food-description {
-    color: aliceblue; width: 420px; margin: 0; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 16px; line-height: 1.6;}
+    color: aliceblue;
+    width: 420px;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    text-shadow: 1px 1px black;
+}
+
+@view-transition {
+    navigation: auto;
+}
+
+.detail-image-row {
+    background-color: rgb(104, 38, 7);
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.vodka-detail-image-row {
+    background-color: rgb(104, 22, 7);
+}
+
+.detail-image {
+    margin-left: 20px;
+    height: 300px;
+    width: 400px;
+}
+
+.vodka-image {
+    height: 250px;
+}
+
+.vodka-home-image {
+    height: 350px;
+}
+
+.detail-description {
+    margin: 0 30px 0 0;
+}
+
+.detail-list li {
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+    }
+
+    .food-image-row {
+        flex-wrap: wrap;
+    }
+}
+
