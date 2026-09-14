@@ -1,0 +1,22 @@
+html {
+    border: 10px solid rgb(75, 75, 75); box-sizing: border-box; min-height: 100vh;}
+
+body {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.food-image-row {
+    display: flex; align-items: center; gap: 15px; justify-content: center; max-width: 1100px; margin: 0 auto;}
+
+.food-image {
+    height: 300px; width: 300px; border-radius: 5px; border: 1px solid black; margin-left: 25px; margin: 0px 25px 25px 25px;}
+
+.food-content {
+    display: flex; align-items: center; gap: 40px;}
+
+.vertical-line {
+    width: 2px; height: 350px; background-color: gold;}
+
+.food-description {
+    color: aliceblue; width: 420px; margin: 0; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 16px; line-height: 1.6;}
